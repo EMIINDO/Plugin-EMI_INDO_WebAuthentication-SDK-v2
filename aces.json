@@ -1,0 +1,239 @@
+{
+  "manage-users": {
+    "conditions": [
+      {
+        "id": "on-user-is-signed-in",
+        "scriptName": "OnUserIsSignedIn",
+        "highlight": true,
+        "isTrigger": true
+      },
+      {
+        "id": "on-user-is-signed-out",
+        "scriptName": "OnUserIsSignedOut",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "on-get-user-profile",
+        "scriptName": "OnGetUserProfile",
+        "highlight": false,
+        "isTrigger": true,
+        "params": [
+          {
+            "id": "tag",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "on-send-password-reset",
+        "scriptName": "OnSendPasswordReset",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "on-update-email",
+        "scriptName": "OnUpdateEmail",
+        "highlight": false,
+        "isTrigger": true
+      }
+    ],
+    "actions": [
+      {
+        "id": "check-user-is-logged-in",
+        "scriptName": "CheckUserIsLoggedIn",
+        "highlight": true,
+        "isAsync": true
+      },
+      {
+        "id": "get-user-profile",
+        "scriptName": "GetUserProfile",
+        "highlight": false,
+        "isAsync": true,
+        "params": [
+          {
+            "id": "tag",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "send-password-reset",
+        "scriptName": "SendPasswordReset",
+        "highlight": false,
+        "isAsync": true,
+        "params": [
+          {
+            "id": "email",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "update-email",
+        "scriptName": "UpdateEmail",
+        "highlight": false,
+        "isAsync": true,
+        "params": [
+          {
+            "id": "email",
+            "type": "string"
+          }
+        ]
+      }
+    ],
+    "expressions": []
+  },
+  "sign-in-with": {
+    "conditions": [
+      {
+        "id": "on-create-email-and-password",
+        "scriptName": "OnCreateEmailAndPassword",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "on-sign-in-email-and-password",
+        "scriptName": "OnSignInEmailAndPassword",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "on-signin-anonymously",
+        "scriptName": "OnSigninAnonymously",
+        "highlight": false,
+        "isTrigger": true
+      }
+    ],
+    "actions": [
+      {
+        "id": "create-email-and-password",
+        "scriptName": "CreateEmailAndPassword",
+        "highlight": false,
+        "isAsync": true,
+        "params": [
+          {
+            "id": "email",
+            "type": "string"
+          },
+          {
+            "id": "password",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "sign-in-email-and-password",
+        "scriptName": "SignInEmailAndPassword",
+        "highlight": false,
+        "isAsync": true,
+        "params": [
+          {
+            "id": "email",
+            "type": "string"
+          },
+          {
+            "id": "password",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "anonymously",
+        "scriptName": "Anonymously",
+        "highlight": false,
+        "isAsync": true
+      }
+    ],
+    "expressions": []
+  },
+  "sign-out": {
+    "conditions": [
+      {
+        "id": "on-sign-out",
+        "scriptName": "OnSignOut",
+        "highlight": false,
+        "isTrigger": true
+      }
+    ],
+    "actions": [
+      {
+        "id": "sign-out",
+        "scriptName": "SignOut",
+        "highlight": false,
+        "isAsync": true
+      }
+    ],
+    "expressions": []
+  },
+  "on-any-error": {
+    "conditions": [
+      {
+        "id": "on-error",
+        "scriptName": "OnError",
+        "highlight": false,
+        "isTrigger": true
+      }
+    ],
+    "actions": [],
+    "expressions": []
+  },
+  "profile-information": {
+    "conditions": [],
+    "actions": [],
+    "expressions": [
+      {
+        "id": "uid",
+        "expressionName": "Uid",
+        "returnType": "any"
+      },
+      {
+        "id": "display-name",
+        "expressionName": "DisplayName",
+        "returnType": "any"
+      },
+      {
+        "id": "email",
+        "expressionName": "Email",
+        "returnType": "any"
+      },
+      {
+        "id": "photo-url",
+        "expressionName": "PhotoUrl",
+        "returnType": "any"
+      },
+      {
+        "id": "email-verified",
+        "expressionName": "EmailVerified",
+        "returnType": "any"
+      }
+    ]
+  },
+  "debug": {
+    "conditions": [],
+    "actions": [],
+    "expressions": [
+      {
+        "id": "event-response",
+        "expressionName": "EventResponse",
+        "returnType": "any"
+      }
+    ]
+  },
+  "error": {
+    "conditions": [],
+    "actions": [],
+    "expressions": [
+      {
+        "id": "error-msg",
+        "expressionName": "ErrorMsg",
+        "returnType": "any"
+      },
+      {
+        "id": "error-code",
+        "expressionName": "ErrorCode",
+        "returnType": "any"
+      }
+    ]
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "languageTag": "en-US",
+  "fileDescription": "Strings for Authentication Plugin",
+  "text": {
+    "plugins": {
+      "emi_indo_webauthentication": {
+        "name": "Authentication",
+        "description": "You can use Firebase Authentication to allow users to sign in to your app using one or more sign-in methods, including email address and password sign-in, and federated identity providers such as Google Sign-in and Facebook Login. This tutorial gets you started with Firebase Authentication by showing you how to add email address and password sign-in to your app.",
+        "help-url": "https://github.com/EMI-INDO/c3addon-bug/issues",
+        "properties": {},
+        "aceCategories": {
+          "manage-users": "manage users",
+          "sign-in-with": "sign in with",
+          "sign-out": "sign out",
+          "on-any-error": "on any error",
+          "profile-information": "profile user information",
+          "debug": "debug",
+          "error": "error"
+        },
+        "conditions": {
+          "on-user-is-signed-in": {
+            "list-name": "On User Is Signed In",
+            "display-text": "On User Is Signed In",
+            "description": "On User Is Signed In"
+          },
+          "on-user-is-signed-out": {
+            "list-name": "On User Is Signed Out",
+            "display-text": "On User Is Signed Out",
+            "description": "On User Is Signed Out, or no account"
+          },
+          "on-error": {
+            "list-name": "On Error",
+            "display-text": "On Error",
+            "description": "On Any Error"
+          },
+          "on-get-user-profile": {
+            "list-name": "On Get User Profile",
+            "display-text": "On Get User Profile, (tag: [b]{0}[/b])",
+            "description": "On Get User Profile",
+            "params": {
+              "tag": {
+                "name": "Tag :",
+                "desc": "This is the parameters description"
+              }
+            }
+          },
+          "on-create-email-and-password": {
+            "list-name": "On Create Email And Password",
+            "display-text": "On Create Email And Password",
+            "description": "On Create Email And Password"
+          },
+          "on-sign-in-email-and-password": {
+            "list-name": "On Sign In Email And Password",
+            "display-text": "On Sign In Email And Password",
+            "description": "On Sign In Email And Password"
+          },
+          "on-send-password-reset": {
+            "list-name": "On Send Password Reset",
+            "display-text": "On Send Password Reset",
+            "description": "On Send Password Reset"
+          },
+          "on-update-email": {
+            "list-name": "On Update Email",
+            "display-text": "On Update Email",
+            "description": "On Update Email"
+          },
+          "on-signin-anonymously": {
+            "list-name": "On Signin Anonymously",
+            "display-text": "On Signin Anonymously",
+            "description": "On Signin Anonymously"
+          },
+          "on-sign-out": {
+            "list-name": "On Sign Out",
+            "display-text": "On Sign Out",
+            "description": "On Sign Out"
+          }
+        },
+        "actions": {
+          "check-user-is-logged-in": {
+            "list-name": "Check User Is Logged In",
+            "display-text": "Check User Is Logged In",
+            "description": "Check User Is Logged In"
+          },
+          "get-user-profile": {
+            "list-name": "Get User Profile",
+            "display-text": "Get User Profile, (tag: [b]{0}[/b])",
+            "description": "Get User Profile",
+            "params": {
+              "tag": {
+                "name": "Tag :",
+                "desc": "This is the parameters description"
+              }
+            }
+          },
+          "create-email-and-password": {
+            "list-name": "Create Email And Password",
+            "display-text": "Create Email And Password, (email: [b]{0}[/b], password: [b]{1}[/b])",
+            "description": "To create a new user account with a password, complete the following steps in your app's sign-up page:",
+            "params": {
+              "email": {
+                "name": "Email :",
+                "desc": "User account email"
+              },
+              "password": {
+                "name": "Password :",
+                "desc": "User accound password"
+              }
+            }
+          },
+          "sign-in-email-and-password": {
+            "list-name": "Sign In Email And Password",
+            "display-text": "Sign In Email And Password, (email: [b]{0}[/b], password: [b]{1}[/b])",
+            "description": "The steps for signing in a user with a password are similar to the steps for creating a new account. In your app's sign-in page, do the following:",
+            "params": {
+              "email": {
+                "name": "Email :",
+                "desc": "User account email"
+              },
+              "password": {
+                "name": "Password :",
+                "desc": "User accound password"
+              }
+            }
+          },
+          "send-password-reset": {
+            "list-name": "Send Password Reset",
+            "display-text": "Send Password Reset, (email: [b]{0}[/b])",
+            "description": "You can send a password reset email to a user",
+            "params": {
+              "email": {
+                "name": "Email :",
+                "desc": "User account email"
+              }
+            }
+          },
+          "update-email": {
+            "list-name": "Update Email",
+            "display-text": "Update Email, (email: [b]{0}[/b])",
+            "description": "You can set a user's email address",
+            "params": {
+              "email": {
+                "name": "Email :",
+                "desc": "User account email"
+              }
+            }
+          },
+          "anonymously": {
+            "list-name": "Anonymously",
+            "display-text": "Anonymously",
+            "description": "Authenticate with Firebase anonymously"
+          },
+          "sign-out": {
+            "list-name": "Sign Out",
+            "display-text": "Sign Out",
+            "description": "Sign Out"
+          }
+        },
+        "expressions": {
+          "uid": {
+            "translated-name": "uid",
+            "description": "get a user's profile information uid"
+          },
+          "display-name": {
+            "translated-name": "Display Name",
+            "description": "get a user's profile information Display Name"
+          },
+          "email": {
+            "translated-name": "Email",
+            "description": "get a user's profile information Email"
+          },
+          "photo-url": {
+            "translated-name": "Photo Url",
+            "description": "get a user's profile information Photo Url"
+          },
+          "email-verified": {
+            "translated-name": "Email Verified",
+            "description": "get a user's profile information Email Verified"
+          },
+          "event-response": {
+            "translated-name": "Event Response",
+            "description": "debug Event Response"
+          },
+          "error-msg": {
+            "translated-name": "Error Msg",
+            "description": "Error message"
+          },
+          "error-code": {
+            "translated-name": "Error Code",
+            "description": "Error Code"
+          }
+        }
+      }
+    }
+  }
+}
